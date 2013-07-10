@@ -17,3 +17,13 @@ everyday on my journey to the job I waste 45 minutes so I decided to build this 
  - Tests
  - Fix MANY MANY Bugs
  - Have fun
+
+
+#### How to use ?
+ 
+````
+  git clone  https://github.com/tdantas/Joke.git
+  cd joke
+  ./bin/joke deploy
+   
+````

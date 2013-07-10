@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/joke'
+Joke.run ARGV[0], File.expand_path("Jokefile",Dir.pwd)

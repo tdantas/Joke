@@ -5,6 +5,7 @@ Joke minimal Rake for fun #irresponsibleruby
 
 Once upon a time ....  
 A good friend asked me to help him to implement a Build tool, for his Job Interview. *GL my friend*  
+
 The challenger was interested in your ability to build tests and how you handle recursion.
 
 I told him, you could use Topological Sort (more generic approach ) or build one simple specific recursion just to solve the dependencies.
@@ -63,9 +64,6 @@ The ChallengeImagine we have a list of jobs, each represented by a character. 
 		f => b
 	 The result should be an error stating that jobs can’t have circular dependencies.
 ````
-
-
-
 
 
 #### TODO

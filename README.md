@@ -80,7 +80,7 @@ If a has no dependency, the position of a in the final sequence does not matter.
 	 The result should be an error stating that jobs can’t have circular dependencies.
 ````
 
-#### How to use ?
+#### How to use ? ( #irresponsibleruby )
  
 ````
   git clone  https://github.com/tdantas/Joke.git

@@ -85,7 +85,6 @@ If a has no dependency, the position of a in the final sequence does not matter.
 #### TODO
  - Tests
  - Fix MANY MANY Bugs
- - Have fun
 
 
 #### How to use ?

@@ -1,0 +1,7 @@
+job "first" do
+ puts "running the testing job"
+end
+
+job "second" do
+ puts "running the testing job"
+end

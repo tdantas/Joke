@@ -80,12 +80,6 @@ If a has no dependency, the position of a in the final sequence does not matter.
 	 The result should be an error stating that jobs can’t have circular dependencies.
 ````
 
-
-#### TODO
- - Tests
- - Fix MANY MANY Bugs
-
-
 #### How to use ?
  
 ````

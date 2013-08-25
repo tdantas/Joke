@@ -2,7 +2,7 @@ Joke
 ====
 
 Joke is a internal DSL based on RAKE #irresponsibleruby  
-Take a Look  [Jakefile](https://github.com/tdantas/Joke/blob/master/Jokefile)
+Take a Look  [Jokefile](https://github.com/tdantas/Joke/blob/master/Jokefile)
 
 ###  Context  
 A good friend asked me to help him to implement a Build tool, for his Job Interview. *GL my friend*   
@@ -91,6 +91,8 @@ If a has no dependency, the position of a in the final sequence does not matter.
 ````
   git clone  https://github.com/tdantas/Joke.git
   cd joke
+  # joke will find for one Jokefile in the current directory
   ./bin/joke deploy
+  
    
 ````

@@ -4,21 +4,26 @@ Joke
 Joke is a internal DSL based on RAKE #irresponsibleruby  
 Take a Look  [Jakefile](https://github.com/tdantas/Joke/blob/master/Jokefile)
 
-Once upon a time ....  
+###  Context  
 A good friend asked me to help him to implement a Build tool, for his Job Interview. *GL my friend*   
-The recruiter was interested in his ability to build tests and how handle recursion.   
+Read the challenge below
+
 I told him:    
   You could use Topological Sort (more generic approach ) or build one simple specific recursion just to solve the dependencies.
 
 How I decided to solve the question ?  
  - everyday on my journey to the job I waste 45 minutes so I decided to build this 'tool' for fun insipired by the job interview :).
- 
- I called **JOKE** ( Job + Rake ) = Joke :)
 
-*Here is the challenge:*
+Inspired by Rake DSL, I try to create my own Internal DSL.   
+Why ??   
+When I like something, I will read the code, study and try to reproduce. Just because I like it :D     
+
+I called **JOKE** ( Job + Rake ) = Joke :)
+
+
+### The Challenge
 
 ````
-The Challenge
 
 Imagine we have a list of jobs, each represented by a character.  
 Because certain jobs must be done before others, a job may have a dependency on another job.

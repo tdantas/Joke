@@ -1,7 +1,8 @@
 Joke
 ====
 
-Joke minimal Rake for fun #irresponsibleruby
+Joke is a internal DSL based on RAKE #irresponsibleruby  
+Take a Look  [Jakefile](https://github.com/tdantas/Joke/blob/master/Jokefile)
 
 Once upon a time ....  
 A good friend asked me to help him to implement a Build tool, for his Job Interview. *GL my friend*   

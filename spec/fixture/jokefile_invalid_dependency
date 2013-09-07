@@ -1,0 +1,3 @@
+job "migrate", "does_not_exist" do
+  puts "Migrating the database"
+end

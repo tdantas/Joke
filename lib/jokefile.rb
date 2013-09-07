@@ -12,14 +12,17 @@ class Jokefile
     new.instance_eval(File.read(path)) 
     job_manager
   end
+
 end
 
 class JobsManager
+
   class CyclicDetectedError < StandardError; end
+  class DependencyNotFound  < StandardError; end
 
   attr_accessor :jobs
   def initialize
-    @jobs={}
+    @jobs = { }
   end
 
   def add(job)
@@ -33,9 +36,17 @@ class JobsManager
   private
   def execute_dependencies(job, visited=[])
     detect_cyclic(job, visited)
-    return @jobs[job].execute if(@jobs[job].dependencies.nil?)
+    return @jobs[job].execute if dependency_from(job).nil?
     execute_dependencies(@jobs[job].dependencies, visited)
     @jobs[job].execute
+  end
+
+  def fetch(job)
+    @jobs[job] || (raise DependencyNotFound.new(" Dependency not found: ' #{job} ' in the Jokefile "))
+  end
+
+  def dependency_from(job)
+    fetch(job).dependencies
   end
 
   def detect_cyclic(job, visited)
@@ -47,6 +58,7 @@ end
 
 class Job
   attr_accessor :name, :command, :dependencies
+  
   def initialize(name, dependencies = nil, &command)
     @name = name
     @dependencies = dependencies || nil

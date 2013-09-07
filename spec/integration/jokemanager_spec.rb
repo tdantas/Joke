@@ -28,7 +28,6 @@ describe Jokefile do
       expect(manager.jobs.keys).to include("first", "second")
       expect(manager.jobs["first"].dependencies).to be(nil)
       expect(manager.jobs["second"].dependencies).to be(nil)
-
     end
 
   end
@@ -79,6 +78,19 @@ describe Jokefile do
       expect{ manager.execute("migrate")}.to raise_error(JobsManager::CyclicDetectedError)
     end
 
+  end
+
+  context "With invalid dependency" do 
+    
+    it "raises DependencyNotFound" do 
+      manager = Jokefile.load(FixtureRegistry[:invalid_dependency])
+      expect{ manager.execute('migrate') }.to raise_error(JobsManager::DependencyNotFound)
+    end
+
+    it "raises DependencyNotFound for does_not_exist" do 
+      manager = Jokefile.load(FixtureRegistry[:invalid_dependency])
+      expect{ manager.execute('migrate') }.to raise_error(JobsManager::DependencyNotFound, /does_not_exist/)
+    end
   end
 
 end

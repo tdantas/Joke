@@ -6,22 +6,50 @@ Take a Look  [Jokefile](https://github.com/tdantas/Joke/blob/master/Jokefile)
 
 ###  Context  
 A good friend asked me to help him to implement a Build tool, for his Job Interview. *GL my friend*   
-Read the challenge below
+Read the Interview below
 
 I told him:    
-  You could use Topological Sort (more generic approach ) or build one simple specific recursion just to solve the dependencies.
+  You could use Topological Sort ( more generic approach ) or build one simple specific recursion just to solve the dependencies.
 
-How I decided to solve the question ?  
- - everyday on my journey to the job I waste 45 minutes so I decided to build this 'tool' for fun insipired by the job interview :).
-
-Inspired by Rake DSL, I try to create my own Internal DSL.   
+Inspired by Rake DSL, I decied to create my own Internal DSL.   
 Why ??   
-When I like something, I will read the code, study and try to reproduce. Just because I like it :D     
+When I like something, I will read the code, study and try to reproduce. Just because I liked it :D     
 
 I called **JOKE** ( Job + Rake ) = Joke :)
 
+### How to use ? ( #irresponsibleruby )
+ 
+````
+  $ git clone  https://github.com/tdantas/Joke.git
+  $ cd joke
+  $ bundle install
+  $ bundle exec joke deploy
+     
+````
 
-### The Challenge
+Options
+
+	$ bundle exec joke -h
+	joke [options] job_name
+      -j, --jokefile PATH              path to Jokefile
+      -l, --list                       list jobs descriptions (TODO)
+      -v, --version                    Print version and exit
+      -h, --help                       Show help
+
+
+### How to Test ?
+
+Why not use the JOKE to run our tests ?  
+*( Need more coverage tests, can you help me ? )*
+  
+
+	bundle exec joke rspec
+
+
+
+===
+
+# The Interview
 
 ````
 
@@ -86,12 +114,6 @@ If a has no dependency, the position of a in the final sequence does not matter.
 	 The result should be an error stating that jobs can’t have circular dependencies.
 ````
 
-### How to use ? ( #irresponsibleruby )
- 
-````
-  git clone  https://github.com/tdantas/Joke.git
-  cd joke
-  # joke will find for one Jokefile in the current directory
-  ./bin/joke deploy
-     
-````
+
+
+

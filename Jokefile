@@ -6,11 +6,8 @@ require 'joke/rspec'
   job "rspec" do 
     Joke::Rspec.run 
   end
-
-  OR
-
+        OR
   job "rspec" , &Joke::Rspec
- 
 =end
 
 

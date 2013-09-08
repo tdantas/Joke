@@ -1,3 +1,5 @@
+require 'joke/rspec'
+
 job "rspec" do
-  system('RUBY -S rspec')
+  Joke::Rspec.run
 end

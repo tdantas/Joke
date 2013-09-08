@@ -13,3 +13,7 @@ require 'joke/rspec'
 
 job "rspec" , &Joke::Rspec
 
+job "deploy" do 
+  puts "Dummy Deploying . . . [ OK ]"
+end
+

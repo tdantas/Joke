@@ -86,13 +86,12 @@ If a has no dependency, the position of a in the final sequence does not matter.
 	 The result should be an error stating that jobs can’t have circular dependencies.
 ````
 
-#### How to use ? ( #irresponsibleruby )
+### How to use ? ( #irresponsibleruby )
  
 ````
   git clone  https://github.com/tdantas/Joke.git
   cd joke
   # joke will find for one Jokefile in the current directory
   ./bin/joke deploy
-  
-   
+     
 ````

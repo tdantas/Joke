@@ -42,7 +42,7 @@ class JobsManager
   end
 
   def fetch(job)
-    @jobs[job] || (raise DependencyNotFound.new(" Dependency not found: ' #{job} ' in the Jokefile "))
+    @jobs[job] || (raise DependencyNotFound.new(" Job not found: ' #{job} ' in the Jokefile "))
   end
 
   def dependency_from(job)

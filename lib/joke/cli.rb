@@ -1,10 +1,8 @@
-require_relative './version'
-require_relative './joke'
+require 'joke'
 
 require 'singleton'
 require 'optparse'
 require 'ostruct'
-require 'pry'
 
 module Joke
   class CLI

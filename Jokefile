@@ -1,12 +1,3 @@
-job "migrate", "environment" do
-  puts "Migrating the database"
-end
-
-job "deploy", "migrate" do
-  puts "Starting deploy ... "
-  puts "Deploy done [OK]"
-end
-
-job "environment" do 
-  puts "Hey ! We are loading the environment."
+job "rspec" do
+  system('RUBY -S rspec')
 end

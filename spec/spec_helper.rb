@@ -1,8 +1,5 @@
 require 'joke'
-require 'jokefile'
-require 'cli'
-
-
+require 'joke/cli'
 
 def capture_stdout(&block)
   original = $stdout

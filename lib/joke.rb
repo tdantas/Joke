@@ -1,5 +1,3 @@
-require_relative './jokefile'
-
 module Joke
 
   def self.run(task, path)
@@ -25,3 +23,9 @@ module Joke
   end
   
 end
+
+require 'joke/jokefile'
+require 'joke/jobs_manager'
+require 'joke/job'
+require 'joke/version'
+require 'joke/cli'

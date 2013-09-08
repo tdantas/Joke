@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/joke'
-Joke.run ARGV[0], File.expand_path("Jokefile",Dir.pwd)
+require_relative '../lib/cli'
+cli = Joke::CLI.instance
+cli.parse ARGV 
+cli.run
+File.expand_path("Jokefile",Dir.pwd)

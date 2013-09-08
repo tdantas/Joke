@@ -1,6 +1,6 @@
 require_relative './jokefile'
 
-class Joke
+module Joke
 
   def self.run(task, path)
     jakefilemanager = Jokefile.load(path)
@@ -23,4 +23,5 @@ class Joke
     puts yield
     puts "-" * 60
   end
+  
 end

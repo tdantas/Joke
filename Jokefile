@@ -1,3 +1,18 @@
 require 'joke/rspec'
 
+=begin
+  Rspec Joke Task
+
+  job "rspec" do 
+    Joke::Rspec.run 
+  end
+
+  OR
+
+  job "rspec" , &Joke::Rspec
+ 
+=end
+
+
 job "rspec" , &Joke::Rspec
+

@@ -8,11 +8,10 @@ Take a Look  [Jokefile](https://github.com/tdantas/Joke/blob/master/Jokefile)
 A good friend asked me to help him to implement a Build tool, for his Job Interview. *GL my friend*   
 Read the Interview below
 
-I told him:    
-  You could use Topological Sort ( more generic approach ) or build one simple specific recursion just to solve the dependencies.
+Inspired by Rake, I decied to create my own Internal DSL.
 
-Inspired by Rake DSL, I decied to create my own Internal DSL.   
-Why ??   
+Why ?? 4 fun  
+
 When I like something, I will read the code, study and try to reproduce. Just because I liked it :D     
 
 I called **JOKE** ( Job + Rake ) = Joke :)
